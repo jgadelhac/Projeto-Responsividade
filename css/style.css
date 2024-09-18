@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+#main-container{
+    display: flex;
+    margin-top: 30px;
+}
+
+#banner-container,
+#formContainer{
+    flex: 1 1 0;
+    width: 50%;
+}
+
+#banner-container{
+    text-align: right;
+}
+
+#banner-container img{
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+
+#formContainer{
+    text-align: center;
+}
+
+#formBox{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 30px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+}
+
+#logoInsta{
+    width: 175px;
+    height: 50px;
+    margin: 30px auto 12px;
+}
+
+#loginForm input{
+    border: 1px solid #dbdbdb;
+    background: #fafafa;
+    border-radius: 5px;
+    height: 40px;
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+#loginForm input[type="submit"]{
+    background: #4fa5ff;
+    opacity: 50%;
+    color: #ffffff;
+    height: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.separator{
+    position: relative;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.line1 {
+    flex: 1;
+    border-top: 1px solid #a9a9a9;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.line2 {
+    flex: 1;
+    border-top: 1px solid #a9a9a9;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+
+.separator span {
+    padding: 0 10px;
+    color: #626262;
+}
+
+#logoFace{
+    height: 15px;
+}
+
+#outroslinks{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#esqueciSenha a{
+    text-decoration: none;
+    color: #4fa5ff;
+}
+
+#registro{
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    border-radius: 5px;
+}
+
+#registro p{
+    padding: 25px;
+}
+
+#registro a{
+    text-decoration: none;
+    color: #4fa5ff;
+    font-weight: inherit;
+}
+
+#baixeInsta{
+    display: block;
+    margin: 20px 0;
+    width: 350px;
+}
+
+#baixeInsta a{
+    text-decoration: none;
+    margin: 0;
+}
+
+#baixeInsta img{
+    margin: 20px 5px;
+    height: 45px;
+}
+
+#linksRodape{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#linksRodape a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: #7c7c7c;
+}
+
+#copyright{
+    justify-content: center;
+    display: flex;
+    margin-top: 25px;
+    color: #7c7c7c;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 450px){
+    body {
+        background-color: #ffffff;
+    }
+
+    #banner-container{
+        display: none;
+    }
+
+    #formBox, #main-container{
+       margin-top: 0;
+    }
+
+    #formContainer,
+    #formBox,
+    #registro,
+    #baixeInsta,
+    .separator{
+        width: 100%;
+        border: none;
+    }
+
+    #separator span{
+        margin-left: 25px;
+    }
+
+    footer{
+        width: 90%;
+    }
+
+    #linksRodape{
+        margin-left: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #linksRodape li{
+        margin-bottom: 10px;
+    }
+
+    #copyright{
+        margin-left: 30px;
+    }
+
+}
